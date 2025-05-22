@@ -1,0 +1,63 @@
+.exploded-cube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  .middle-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .face {
+    margin: 5px;
+  }
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-row {
+}
+
+.rubikscube-list-width {
+}
+
+.rubikscubes-wrapper {
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+}
+
+.rubikscubes-card-height {
+  height: 100%;
+}
+
+.full-screen-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.full-screen-card {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-padding {
+  padding: 20px;
+}
+
+.title-center {
+  text-align: center;
+}

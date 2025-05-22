@@ -1,0 +1,21 @@
+
+<div class="rubikscubes-list-wrapper">
+  <button mat-flat-button color="primary" (click)="createRubiksCube()">Create</button>
+  <table mat-table [dataSource]="cubes" class="mat-elevation-z8 rubikscube-list-width">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Rubiks Cube ID </th>
+      <td mat-cell *matCellDef="let cube"> {{cube.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let cube">
+        <button mat-flat-button color="primary" (click)="viewRubiksCube(cube.id)">View</button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+</div>

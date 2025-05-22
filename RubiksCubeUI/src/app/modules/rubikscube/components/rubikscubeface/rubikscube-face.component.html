@@ -1,0 +1,5 @@
+<div class="cube-face">
+  <div class="row" *ngFor="let row of boxes">
+    <div class="cell" *ngFor="let box of row" [style.backgroundColor]="getColor(box.color)"></div>
+  </div>
+</div>

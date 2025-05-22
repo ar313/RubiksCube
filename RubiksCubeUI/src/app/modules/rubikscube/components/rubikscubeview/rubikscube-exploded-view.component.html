@@ -1,0 +1,35 @@
+<div class="rubikscubes-exploded-view-wrapper">
+  <button mat-flat-button color="primary" (click)="back()">Back</button>
+
+  <div class="exploded-cube" *ngIf="faces">
+    <div class="face up">
+      <rubikscube-face [boxes]="faces[RubiksFace.Up]"></rubikscube-face>
+    </div>
+    <div class="middle-row">
+      <div class="face left">
+        <rubikscube-face [boxes]="faces[RubiksFace.Left]"></rubikscube-face>
+      </div>
+      <div class="face front">
+        <rubikscube-face [boxes]="faces[RubiksFace.Front]"></rubikscube-face>
+      </div>
+      <div class="face right">
+        <rubikscube-face [boxes]="faces[RubiksFace.Right]"></rubikscube-face>
+      </div>
+      <div class="face back">
+        <rubikscube-face [boxes]="faces[RubiksFace.Back]"></rubikscube-face>
+      </div>
+    </div>
+    <div class="face down">
+      <rubikscube-face [boxes]="faces[RubiksFace.Down]"></rubikscube-face>
+    </div>
+  </div>
+  <div class="button-row">
+    <div class="row">
+      <button *ngFor="let btn1 of buttonsClockwise" mat-mini-fab color="primary" (click)="rotateCube(btn1.face, btn1.rotation)">{{btn1.label}}</button>
+    </div>
+    <div class="row">
+      <button *ngFor="let btn2 of buttonsCounterClockwise" mat-mini-fab color="primary" (click)="rotateCube(btn2.face, btn2.rotation)">{{btn2.label}}</button>
+    </div>
+  </div>
+</div>
+

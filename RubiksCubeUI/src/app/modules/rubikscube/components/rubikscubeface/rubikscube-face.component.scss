@@ -1,0 +1,17 @@
+.cube-face {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  .row {
+    display: flex;
+    gap: 0px;
+
+    .cell {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #000;
+      border-radius: 4px;
+    }
+  }
+}

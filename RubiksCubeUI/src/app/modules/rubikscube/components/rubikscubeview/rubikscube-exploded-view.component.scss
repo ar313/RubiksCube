@@ -1,0 +1,27 @@
+.exploded-cube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  .middle-row {
+    display: flex;
+    gap: 4px;
+    padding-left: 106px;
+  }
+
+  .face {
+    margin: 0px;
+  }
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-row {
+    margin-top: 20px;
+}
